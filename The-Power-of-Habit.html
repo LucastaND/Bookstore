@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OwlBook</title>
+	<!-- add logo-->
+	<link rel="OwlBook" type="image/png" href="/logo.png"/>
+	<link rel="OwlBook" type="image/png" href="/shopping-cart.png">
+
+	<!-- font awesome cdn link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+	<!--custom css file link-->
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body{
+			background-image: url(banner-bg.jpg);
+		}
+	</style>
+	<script src="srcipt.js"></script>
+</head>
+<body> 
+	<header class="header">
+		<div class="section">
+			<div class="logo">
+				<a href="ques1.html"><img src="logo.png" width="125px"></a>
+			</div>
+
+			<form class="search-form" action="#">
+				<input type="search" name="" placeholder="Search..." id="search-box">
+					<label for="search-box" class="fas fa-search"></label>
+			</form>
+
+			<nav class="icons">
+				<ul id="search-btn">
+					<li>
+						<div id="shopping-cart">
+							<a href="shopping-cart.html" class="fa-solid fa-cart-shopping"></a>
+						</div>
+					</li>
+					<li>
+						<div id="login-btn" class="fas fa-user"></div>
+					</li>
+					<li>
+						<div id="about-us">
+							<a href="aboutus.html" class="fa-solid fa-circle-info"></a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="menu">
+			<nav class="navbar">
+				<a href="ques1.html"> Home </a>
+				<a href="categories.html"> Categories </a>
+				<a href="contact.html"> Contact </a>
+				<a href="ques2.html"> Visitor Enquiry </a>
+			</nav>
+		</div>
+
+		<div class="home" id="home">
+			<div class="title" align="left">
+			
+					<h1>
+						<font size="10">
+							<a href="The-Power-of-Habit.html">The Power of Habit: Why We Do<br> What We Do in Life and Business</a>
+							<input type="hidden" id="name" value="The Power of Habit: Why We Do What We Do in Life and Business"/>
+						</font>
+					</h1>
+			
+			</div>
+
+		<hr width="25%" align="left" />
+
+		<div class="book" align="center">
+			<table border="0" width="600" cellspacing="0" cellpadding="1" align="center">
+				<tr>
+					<td>
+						<img src="book-10.png" id="image">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<font size="5">
+							<b>Price: <i>$<span id="price">15,00</span></i></b>
+						</font>
+						<p>
+							<font size="4">
+								<form action="shopping-cart.html">
+									<label for="quantity">Qty:</label>
+									<input type="number" id="quantity" name="quantity" min="1" max="50" value="1">
+									<input type="button" id="add_to_cart" value="Add to Cart"> 
+								</form>
+							</font>
+						</p>
+					</td>
+				</tr>
+			</table>
+
+			<table border="0" width="1000" cellspacing="0" cellpadding="0" align="left">
+				<tr>
+					<th> 
+						<font size="5">Overview</font>
+					</th>
+				</tr>
+
+				<tr>
+					<td> 
+						<font size="4">
+							<b>Auhor: Charles Duhigg</b><br>
+							<p>
+								<br>NEW YORK TIMES BESTSELLER - Perfect for anyone trying to start the new year off right, this instant classic explores how we can change our lives by changing our habits. NAMED ONE OF THE BEST BOOKS OF THE YEAR BY The Wall Street Journal - Financial Times In The Power of Habit, award-winning business reporter Charles Duhigg takes us to the thrilling edge of scientific discoveries that explain why habits exist and how they can be changed. Distilling vast amounts of information into engrossing narratives that take us from the boardrooms of Procter & Gamble to the sidelines of the NFL to the front lines of the civil rights movement, Duhigg presents a whole new understanding of human nature and its potential. At its core, The Power of Habit contains an exhilarating argument: The key to exercising regularly, losing weight, being more productive, and achieving success is understanding how habits work. As Duhigg shows, by harnessing this new science, we can transform our businesses, our communities, and our lives. With a new Afterword by the author "Sharp, provocative, and useful."--Jim Collins "Few [books] become essential manuals for business and living. The Power of Habit is an exception. Charles Duhigg not only explains how habits are formed but how to kick bad ones and hang on to the good."--Financial Times "A flat-out great read."--David Allen, bestselling author of Getting Things Done: The Art of Stress-Free Productivity
+
+								<br>
+
+								<br>"You'll never look at yourself, your organization, or your world quite the same way."--Daniel H. Pink, bestselling author of Drive and A Whole New Mind
+
+								<br>
+
+								<br>"Entertaining . . . enjoyable . . . fascinating . . . a serious look at the science of habit formation and change."--The New York Times Book Review
+							</p>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</header>
+</body>
+</html>

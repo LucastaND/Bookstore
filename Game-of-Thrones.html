@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OwlBook</title>
+	<!-- add logo-->
+	<link rel="OwlBook" type="image/png" href="/logo.png"/>
+	<link rel="OwlBook" type="image/png" href="/shopping-cart.png">
+
+	<!-- font awesome cdn link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+	<!--custom css file link-->
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body{
+			background-image: url(banner-bg.jpg);
+		}
+	</style>
+	<script src="srcipt.js"></script>
+</head>
+<body> 
+	<header class="header">
+		<div class="section">
+			<div class="logo">
+				<a href="ques1.html"><img src="logo.png" width="125px"></a>
+			</div>
+
+			<form class="search-form" action="#">
+				<input type="search" name="" placeholder="Search..." id="search-box">
+					<label for="search-box" class="fas fa-search"></label>
+			</form>
+
+			<nav class="icons">
+				<ul id="search-btn">
+					<li>
+						<div id="shopping-cart">
+							<a href="shopping-cart.html" class="fa-solid fa-cart-shopping"></a>
+						</div>
+					</li>
+					<li>
+						<div id="login-btn" class="fas fa-user"></div>
+					</li>
+					<li>
+						<div id="about-us">
+							<a href="aboutus.html" class="fa-solid fa-circle-info"></a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="menu">
+			<nav class="navbar">
+				<a href="ques1.html"> Home </a>
+				<a href="categories.html"> Categories </a>
+				<a href="contact.html"> Contact </a>
+				<a href="ques2.html"> Visitor Enquiry </a>
+			</nav>
+		</div>
+
+		<div class="home" id="home">
+			<div class="title" align="left">
+				<h1>
+					<font size="10">
+						<a href="Game-of-Thrones.html">Game of Thrones</a>
+						<input type="hidden" id="name" value="Game of Thrones"/>
+					</font>
+				</h1>
+			</div>
+
+		<hr width="25%" align="left" />
+
+		<form class="book" align="center">
+			<table border="0" width="600" cellspacing="0" cellpadding="1" align="center">
+				<tr>
+					<td>
+						<img src="book-7.png" id="image">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<font size="5">
+							<b>Price: <i>$<span id="price">20,00</span></i></b>
+						</font>
+						<p>
+							<font size="4">
+								<form action="shopping-cart.html">
+									<label for="quantity">Qty:</label>
+									<input type="number" id="quantity" name="quantity" min="1" max="50" value="1">
+									<input type="button" id="add_to_cart" value="Add to Cart"> 
+								</form>
+							</font>
+						</p>
+					</td>
+				</tr>
+			</table>
+
+			<table border="0" width="1000" cellspacing="0" cellpadding="0" align="left">
+				<tr>
+					<th> 
+						<font size="5">Overview</font>
+					</th>
+				</tr>
+
+				<tr>
+					<td> 
+						<font size="4">
+							<b>Auhor: George R R Martin</b><br>
+							<p>
+								NOW THE ACCLAIMED HBO SERIES GAME OF THRONES--THE MASTERPIECE THAT BECAME A CULTURAL PHENOMENON Winter is coming. Such is the stern motto of House Stark, the northernmost of the fiefdoms that owe allegiance to King Robert Baratheon in far-off King's Landing. There Eddard Stark of Winterfell rules in Robert's name. There his family dwells in peace and comfort: his proud wife, Catelyn; his sons Robb, Brandon, and Rickon; his daughters Sansa and Arya; and his bastard son, Jon Snow. Far to the north, behind the towering Wall, lie savage Wildings and worse--unnatural things relegated to myth during the centuries-long summer, but proving all too real and all too deadly in the turning of the season. Yet a more immediate threat lurks to the south, where Jon Arryn, the Hand of the King, has died under mysterious circumstances. Now Robert is riding north to Winterfell, bringing his queen, the lovely but cold Cersei, his son, the cruel, vainglorious Prince Joffrey, and the queen's brothers Jaime and Tyrion of the powerful and wealthy House Lannister--the first a swordsman without equal, the second a dwarf whose stunted stature belies a brilliant mind. All are heading for Winterfell and a fateful encounter that will change the course of kingdoms. Meanwhile, across the Narrow Sea, Prince Viserys, heir of the fallen House Targaryen, which once ruled all of Westeros, schemes to reclaim the throne with an army of barbarian Dothraki--whose loyalty he will purchase in the only coin left to him: his beautiful yet innocent sister, Daenerys.
+							</p>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</form>
+		</div>
+		<script>
+					var saved_books = JSON.parse(localStorage.getItem('books'));
+					if (!saved_books) {
+						saved_books = [];
+					}
+					
+					var books_table = document.getElementById('books');
+					saved_books.forEach(function (book) {
+						var tr = document.createElement('tr');
+
+						var image_th = document.createElement('th');
+						var image = document.createElement('img');
+						image.src = book.image;
+						image_th.appendChild(image);
+						tr.appendChild(image_th);
+
+						var name_th = document.createElement('th');
+						var name = document.createElement('span');
+						name.value = book.name;
+						name_th.appendChild(name);
+						tr.appendChild(name_th);
+
+						var price_th = document.createElement('th');
+						var price = document.getElementById('span');
+						price.value = book.price;
+						price_th.appendChild(price);
+						tr.appendChild(price_th);
+
+						var quantity_th = document.createElement('th');
+						var quantity = document.getElementById('button');
+						quantity.value = book.quantity;
+						quantity_th.appendChild(quantity);
+						tr.appendChild(quantity);
+
+						books_table.appendChild(tr);
+					</script>
+	</header>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OwlBook</title>
+	<!-- add logo-->
+	<link rel="OwlBook" type="image/png" href="/logo.png"/>
+	<link rel="OwlBook" type="image/png" href="/shopping-cart.png">
+
+	<!-- font awesome cdn link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+	<!--custom css file link-->
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body{
+			background-image: url(banner-bg.jpg);
+		}
+	</style>
+	<script src="srcipt.js"></script>
+</head>
+<body> 
+	<header class="header">
+		<div class="section">
+			<div class="logo">
+				<a href="ques1.html"><img src="logo.png" width="125px"></a>
+			</div>
+
+			<form class="search-form" action="#">
+				<input type="search" name="" placeholder="Search..." id="search-box">
+					<label for="search-box" class="fas fa-search"></label>
+			</form>
+
+			<nav class="icons">
+				<ul id="search-btn">
+					<li>
+						<div id="shopping-cart">
+							<a href="shopping-cart.html" class="fa-solid fa-cart-shopping"></a>
+						</div>
+					</li>
+					<li>
+						<div id="login-btn" class="fas fa-user"></div>
+					</li>
+					<li>
+						<div id="about-us">
+							<a href="aboutus.html" class="fa-solid fa-circle-info"></a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="menu">
+			<nav class="navbar">
+				<a href="ques1.html"> Home </a>
+				<a href="categories.html"> Categories </a>
+				<a href="contact.html"> Contact </a>
+				<a href="ques2.html"> Visitor Enquiry </a>
+			</nav>
+		</div>
+
+		<div class="home" id="home">
+			<div class="title" align="left">
+			
+					<h1>
+						<font size="10">
+							<a href="Asteroid-Hunters.html">Asteroid Hunters</a>
+							<input type="hidden" id="name" value="Asteroid Hunters"/>
+						</font>
+					</h1>
+			
+			</div>
+
+		<hr width="25%" align="left" />
+
+		<div class="book" align="center">
+			<table border="0" width="600" cellspacing="0" cellpadding="1" align="center">
+				<tr>
+					<td>
+						<img src="book-5.png" id="image">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<font size="5">
+							<b>Price: <i>$<span id="price">17,00</span></i></b>
+						</font>
+						<p>
+							<font size="4">
+								<form action="shopping-cart.html">
+									<label for="quantity">Qty:</label>
+									<input type="number" id="quantity" name="quantity" min="1" max="50" value="1">
+									<input type="button" id="add_to_cart" value="Add to Cart"> 
+								</form>
+							</font>
+						</p>
+					</td>
+				</tr>
+			</table>
+
+			<table border="0" width="1000" cellspacing="0" cellpadding="0" align="left">
+				<tr>
+					<th> 
+						<font size="5">Overview</font>
+					</th>
+				</tr>
+
+				<tr>
+					<td> 
+						<font size="4">
+							<b>Auhor: Carrie Nugent</b><br>
+							<p>
+								For the first time, scientists could have the knowledge to prevent a natural disaster epic in scale--an asteroid hitting the earth and in this exciting, adventuresome book, Carrie Nugent explains how. What are asteroids, and where do they come from? And, most urgently: Are they going to hit the Earth? What would happen if one was on its way? Carrie Nugent is an asteroid hunter--part of a group of scientists working to map our cosmic neighborhood. For the first time ever, we are reaching the point where we may be able to prevent the horrible natural disaster that would result from an asteroid collision. In Asteroid Hunters, Nugent reveals what known impact asteroids have had: the extinction of the dinosaurs, the earth-sized hole Shoemaker Levy 9 left in Jupiter just a few decades ago, how the meteorite that bursted over Chelyabinsk in Russia could have started a war, and unlucky Ms. Anne Hodges--the only person (that we know of) in US history to be the victim of a direct hit. Nugent also introduces the telescope she uses to detect near-Earth asteroids. Ultimately, detection is the key to preventing asteroid impact, and these specialized scientists are working to prevent the unthinkable from happening. If successful, asteroid hunting will lead to the first natural disaster humans have the know-how and the technology to prevent. The successful hunt and mapping of asteroids could mean nothing less than saving life on earth.
+							</p>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</header>
+</body>
+</html>

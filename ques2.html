@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OwlBook</title>
+	<!-- add logo-->
+	<link rel="OwlBook" type="image/png" href="/logo.png"/>
+	<link rel="OwlBook" type="image/png" href="/shopping-cart.png">
+
+	<!-- font awesome cdn link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+	<!--custom css file link-->
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body{
+			background-image: url(banner-bg.jpg);
+		}
+	</style>
+	<script src="srcipt.js"></script>
+</head>
+<body> 
+	<header class="header">
+		<div class="section">
+			<div class="logo">
+				<a href="ques1.html"><img src="logo.png" width="125px"></a>
+			</div>
+
+			<form class="search-form" action="#">
+				<input type="search" name="" placeholder="Search..." id="search-box">
+					<label for="search-box" class="fas fa-search"></label>
+			</form>
+
+			<nav class="icons">
+				<ul id="search-btn">
+					<li>
+						<div id="shopping-cart">
+							<a href="shopping-cart.html" class="fa-solid fa-cart-shopping"></a>
+						</div>
+					</li>
+					<li>
+						<div id="login-btn" class="fas fa-user"></div>
+					</li>
+					<li>
+						<div id="about-us">
+							<a href="aboutus.html" class="fa-solid fa-circle-info"></a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="menu">
+			<nav class="navbar">
+				<a href="ques1.html"> Home </a>
+				<a href="categories.html"> Categories </a>
+				<a href="contact.html"> Contact </a>
+				<a href="ques2.html"> Visitor Enquiry </a>
+			</nav>
+		</div>
+
+		<div class="home" id="home">
+			<div class="title" align="left">
+				<font size="5">
+					<h1>
+						<a href="ques2.html" align="center"> VISITOR ENQUIRY FORM </a>
+					</h1>
+				</font>
+			</div>
+
+			<hr width="25%" align="left" />
+		</div>
+
+	<!-- The form we need input information to -->
+	<form  method="get" action="result.html" onsubmit="return validate()">
+		<fieldset>
+			<div id="result"></div>
+			
+			<table>
+				<tr>
+					<td>
+						<label for="name"> Your name: </label>
+					</td>
+					<td>
+						<input type="text" name="name" id="name" placeholder="your full name" class="required"/> 
+					</td>
+				</tr>
+
+                <tr>
+					<td>
+						<label for="email"> Email: </label>
+					</td>
+					<td>
+						<input type="text" name="email" id="email" placeholder="youremail@gmail.com" class="required"/> 
+					</td>
+				</tr>
+
+				<tr>
+			        <td>
+			            <label for="gender"> Gender: </label> 
+			        </td>
+			        <td>
+				        <input type="radio" class="gender" value="Male" name="gender" /> Male
+				        <input type="radio" class="gender" value="Female" name="gender" /> Female
+			        </td>
+		        </tr>
+
+                <tr>
+        	        <td> 
+        	            <label for="location"> Location: </label>
+        	        </td>
+        	        <td>
+		                <select name="location" id="location">
+			                <option>---Select Your Location---</option>
+			                <option value="Hà Nội"> Hà Nội </option>
+			                <option value="TP.HCM"> TP.HCM </option>
+			                <option value="Gia Lai"> Gia Lai </option>
+			                <option value="Buôn Ma Thuật"> Buôn Ma Thuật </option>
+			                <option value="Vũng Tàu"> Vũng Tàu </option>
+			                <option value="Bà Rịa"> Bà Rịa </option>
+		                </select>
+		            </td>
+		        </tr>
+
+			    <tr>
+					<td>
+						<label for="Message"> Please Write Your Enquiry: </label>
+					</td>
+					<td>
+						<textarea type="text" id="message" name="message" placeholder="Type your enquries here..." cols="35" rows="7" class="required"></textarea>
+					</td>
+				</tr>
+
+				<tr colspan="1" align="center">
+			        <td></td>
+			        <td>
+				        <button id="submit"> Submit </button>
+				        <input type="reset" value="Cancel">
+			        </td>
+		        </tr>
+		    </table>
+		</fieldset>
+	</form>
+	</header>
+
+<!-- check out the value and give notice you need to input the information that you wasn't written down -->
+	<script type="text/javascript">
+		function validate() {
+			const name = document.getElementById('name').value;
+			if (!name) {
+				alert("please enter the values");
+
+				return false;
+			}
+			return true;
+
+			const email = document.getElementById('email').value;
+			if (!email) {
+				alert("please enter the values");
+
+				return false;
+			}
+			return true;
+
+			const gender = document.getElementById('gender').value;
+			if (!gender) {
+				alert("please enter the values");
+
+				return false;
+			}
+			return true;
+
+			const location = document.getElementById('locction').value;
+			if (!location) {
+				alert("please enter the values");
+
+				return false;
+			}
+			return true;
+
+			const message = document.getElementById('message').value;
+			if (!message) {
+				alert("please enter the values");
+
+				return false;
+			}
+			return true;
+		}
+	</script>
+</body>
+</html>

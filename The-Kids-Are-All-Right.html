@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OwlBook</title>
+	<!-- add logo-->
+	<link rel="OwlBook" type="image/png" href="/logo.png"/>
+	<link rel="OwlBook" type="image/png" href="/shopping-cart.png">
+
+	<!-- font awesome cdn link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+	<!--custom css file link-->
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body{
+			background-image: url(banner-bg.jpg);
+		}
+	</style>
+	<script src="srcipt.js"></script>
+</head>
+<body> 
+	<header class="header">
+		<div class="section">
+			<div class="logo">
+				<a href="ques1.html"><img src="logo.png" width="125px"></a>
+			</div>
+
+			<form class="search-form" action="#">
+				<input type="search" name="" placeholder="Search..." id="search-box">
+					<label for="search-box" class="fas fa-search"></label>
+			</form>
+
+			<nav class="icons">
+				<ul id="search-btn">
+					<li>
+						<div id="shopping-cart">
+							<a href="shopping-cart.html" class="fa-solid fa-cart-shopping"></a>
+						</div>
+					</li>
+					<li>
+						<div id="login-btn" class="fas fa-user"></div>
+					</li>
+					<li>
+						<div id="about-us">
+							<a href="aboutus.html" class="fa-solid fa-circle-info"></a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="menu">
+			<nav class="navbar">
+				<a href="ques1.html"> Home </a>
+				<a href="categories.html"> Categories </a>
+				<a href="contact.html"> Contact </a>
+				<a href="ques2.html"> Visitor Enquiry </a>
+			</nav>
+		</div>
+
+		<div class="home" id="home">
+			<div class="title" align="left">
+				
+					<h1>
+						<font size="10">
+							<a href="The-Kids-Are-All-Right.html">The Kids Are All Right:<br> The Shooting Script</a>
+							<input type="hidden" id="name" value="The Kids Are All Right: The Shooting Script"/>
+						</font>
+					</h1>
+		
+			</div>
+
+		<hr width="25%" align="left" />
+
+		<div class="book" align="center">
+			<table border="0" width="600" cellspacing="0" cellpadding="1" align="center">
+				<tr>
+					<td>
+						<img src="book-8.png" id="image">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<font size="5">
+							<b>Price: <i>$<span id="price">25,15</span></i></b>
+						</font>
+						<p>
+							<font size="4">
+								<form action="shopping-cart.html">
+									<label for="quantity">Qty:</label>
+									<input type="number" id="quantity" name="quantity" min="1" max="50" value="1">
+									<input type="button" id="add_to_cart" value="Add to Cart"> 
+								</form>
+							</font>
+						</p>
+					</td>
+				</tr>
+			</table>
+
+			<table border="0" width="1000" cellspacing="0" cellpadding="0" align="left">
+				<tr>
+					<th> 
+						<font size="5">Overview</font>
+					</th>
+				</tr>
+
+				<tr>
+					<td> 
+						<font size="4">
+							<b>Auhor: Various</b><br>
+							<p>
+								<br>The most talked-about movie at the 2010 SundanceFilm Festival, and the winner of the Teddy Award forBest Feature Film at the 2010 Berlin International FilmFestival, The Kids Are All Right was directed by LisaCholodenko (High Art, Laurel Canyon) from an originalscreenplay that she wrote with Stuart Blumberg(Keeping the Faith). The movie combines comedic surprisewith poignant emotional truth in a funny, vibrant, and richly drawn portrait of a modern family.
+
+								<br>
+
+								<br>Nic and Jules (three-time Academy Award(R) nomineeAnnette Bening and four-time Academy Award(R)nominee Julianne Moore) are married and share acozy suburban Southern California home with theirteenage children, Joni and Laser (Mia Wasikowska andJosh Hutcherson). Nic and Jules--or, when referredto jointly by Joni,"Moms"--gave birth to and raisedtheir children, and built a family life for the four ofthem.As Joni prepares to leave for college, 15-year-oldLaser presses her for a big favor. He wants Joni, now18, to help him find their biological father; the twoteenagers were conceived by donor insemination.
+
+								<br>
+
+								<br>Against her better judgment, Joni honors herbrother's request and manages to make contact with"bio-dad" Paul (Mark Ruffalo), an easygoing restaurateur.The kids find themselves drawn to the confirmedbachelor's footloose style--especially in contrastto Nic, a principled doctor who has long establishedtheir house rules. Jules, who has been lookingto start a new career in landscaping, also strikes up arapport with Paul.As Paul comes into the lives of theforthright four, an unexpected new chapter begins forthem as family ties are defined, re-defined, and thenre-re-defined.
+							</p>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</header>
+</body>
+</html>

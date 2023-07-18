@@ -1,0 +1,221 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none, border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: all. 2s linear;
+	transition: width none;
+}
+
+html{
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-padding-top:  5rem;
+	scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+	width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+	background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+	background: #444;
+}
+
+.header .section{
+	background: #fff;
+	padding: 1.5rem 9%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header .section .logo{
+	font-size: 2.5rem;
+	font-weight: bolder;
+	color: #444;
+}
+
+.header .section .search-form{
+	width: 15rem;
+	height: 2rem;
+	overflow: hidden;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	border-radius: .2rem;
+}
+
+.header .section .search-form input{
+	font-size: 1.6rem;
+	padding: 0 1.2rem;
+	height: 100%;
+	width: 100%;
+	text-transform: none;
+	color: #9C9C9C;
+	cursor: pointer;
+}
+
+.header .section .search-form label:hover{
+	color: #00B2EE;
+}
+
+.header .section .icons div,
+.header .section .icons a{
+	font-size: 2.5rem;
+	margin-left: 1.5rem;
+	color: #000000;
+	cursor: pointer;
+}
+
+.header .section .icons div:hover,
+.header .section .icons a:hover{
+	color: #C6E2FF;
+}
+
+.section{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+section{
+	padding: 5rem 9%;
+}
+
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+
+a{
+	text-decoration: none;
+	color: #555;
+}
+
+p{
+	color: #555;
+}
+
+.header{
+	max-width: auto;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.menu{
+	background: #00B2EE;
+}
+
+.navbar{
+	text-align: center;
+}
+ 
+.imageBox{
+	text-align: center;
+	align-items: center;
+	font-size: 20px;
+}
+
+.menu .navbar a{
+	color: #FFFFFF;
+	display: inline-block;
+	padding: 15px;
+	font-size: 20px;
+}
+
+.home{
+	background: url(banner-bg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.home .content{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+
+.home .content .textBox{
+	flex: 1 1 42rem;
+}
+
+.home .content .books-slider{
+	flex: 1 1 42rem;
+}
+
+.home .content .books-slider a{
+	height: 25rem;
+}
+
+.home .books-slider a:hover img{
+	transform: scale(0.9);
+}
+
+
+.home .content .stand{
+	width: 100%;
+	margin-top: 1rem;
+}
+
+.home .content .textBox h1{
+	color: #000;
+	font-size: 25px;
+}
+
+.home .content .textBox h2{
+	color: #666;
+	font-size: 18px;
+	line-height: 2;
+	padding: 1rem 0;
+}
+
+.home .content-cate .books-slider .imageBox img{
+	width: 90px;
+	height: 95px;
+}
+
+.body img{
+	width: 200px;
+	height: 250px;
+	margin: 20px;
+}
+
+.textBox p{
+	margin: 2rem;
+	text-align: center;
+}
+
+.book table{
+	margin-top: 2rem;
+	align-items: center;
+}
+
+div ul li{
+	display: inline-block;
+	margin: 20px;
+}
+
+form fieldset{
+	margin-top: 2rem;
+	font-size: 20px;
+}

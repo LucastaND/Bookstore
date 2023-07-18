@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OwlBook</title>
+	<!-- add logo-->
+	<link rel="OwlBook" type="image/png" href="/logo.png"/>
+	<link rel="OwlBook" type="image/png" href="/shopping-cart.png">
+
+	<!-- font awesome cdn link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+	<!--custom css vs scripts file link and add background-->
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body{
+			background-image: url(banner-bg.jpg);
+		}
+	</style>
+	<script src="srcipt.js"></script>
+</head>
+
+<body> 
+	<header class="header">
+		<div class="section">
+			<div class="logo">
+				<a href="ques1.html"><img src="logo.png" width="125px"></a>
+			</div>
+
+			<!-- use function font awesome add incon for search bar -->
+			<form class="search-form" action="#">
+				<input type="search" name="" placeholder="Search..." id="search-box">
+					<label for="search-box" class="fas fa-search"></label>
+			</form>
+
+			<!-- use function font awesome add icon for about us, shopping cart and account-->
+			<nav class="icons">
+				<ul id="search-btn">
+					<li>
+						<div id="shopping-cart">
+							<a href="shopping-cart.html" class="fa-solid fa-cart-shopping"></a>
+						</div>
+					</li>
+					<li>
+						<div id="login-btn" class="fas fa-user"></div>
+					</li>
+					<li>
+						<div id="about-us">
+							<a href="aboutus.html" class="fa-solid fa-circle-info"></a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- add link for a opiton of menu-->
+		<div class="menu">
+			<nav class="navbar">
+				<a href="ques1.html"> Home </a>
+				<a href="categories.html"> Categories </a>
+				<a href="contact.html"> Contact </a>
+				<a href="ques2.html"> Visitor Enquiry </a>
+			</nav>
+		</div>
+
+		<div class="home" id="home">
+			<div class="title" align="left">
+					<h1>
+						<font size="10">
+							<a href="Sapiens.html">Sapiens: A Brief History<br> of Humankind</a>
+							<input type="hidden" id="name" value="Sapiens: A Brief History of Humankind"/>
+						</font>
+					</h1>
+
+			</div>
+
+		<hr width="25%" align="left" />
+
+		<div class="book" align="center">
+			<table border="0" width="600" cellspacing="0" cellpadding="1" align="center">
+				<tr>
+					<td>
+						<img src="book-2.png" id="image">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<font size="5">
+							<b>Price: <i>$<span id="price">20,45</span></i></b>
+						</font>
+						<p>
+							<font size="4">
+								<form action="shopping-cart.html">
+									<label for="quantity">Qty:</label>
+									<input type="number" id="quantity" name="quantity" min="1" max="50" value="1">
+									<input type="button" id="add_to_cart" value="Add to Cart"> 
+								</form>
+							</font>
+						</p>
+					</td>
+				</tr>
+			</table>
+
+			<table border="0" width="1000" cellspacing="0" cellpadding="0" align="left">
+				<tr>
+					<th> 
+						<font size="5">Overview</font>
+					</th>
+				</tr>
+
+				<tr>
+					<td> 
+						<font size="4">
+							<b>Auhor: Yuval Noah Harari</b><br>
+							 <p>#1 New York Times Bestseller
+
+							 	<br>
+
+								<br>The Summer Reading Pick for President Barack Obama, Bill Gates, and Mark Zuckerberg, now available as a beautifully packaged paperback.
+
+								<br>
+
+								<br>From a renowned historian comes a groundbreaking narrative of humanity's creation and evolution--a #1 international bestseller--that explores the ways in which biology and history have defined us and enhanced our understanding of what it means to be "human."
+
+								<br>
+
+								<br>One hundred thousand years ago, at least six different species of humans inhabited Earth. Yet today there is only one--homo sapiens. What happened to the others? And what may happen to us?
+
+								<br>
+
+								<br>Most books about the history of humanity pursue either a historical or a biological approach, but Dr. Yuval Noah Harari breaks the mold with this highly original book that begins about 70,000 years ago with the appearance of modern cognition. From examining the role evolving humans have played in the global ecosystem to charting the rise of empires, Sapiens integrates history and science to reconsider accepted narratives, connect past developments with contemporary concerns, and examine specific events within the context of larger ideas.
+
+								<br>
+
+								<br>Dr. Harari also compels us to look ahead, because over the last few decades humans have begun to bend laws of natural selection that have governed life for the past four billion years. We are acquiring the ability to design not only the world around us, but also ourselves. Where is this leading us, and what do we want to become?
+
+								<br>
+
+								<br>Featuring 27 photographs, 6 maps, and 25 illustrations/diagrams, this provocative and insightful work is sure to spark debate and is essential reading for aficionados of Jared Diamond, James Gleick, Matt Ridley, Robert Wright, and Sharon Moalem.
+								</p>
+							</font>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	</header>
+</body>
+</html>

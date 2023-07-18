@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OwlBook</title>
+	<!-- add logo-->
+	<link rel="OwlBook" type="image/png" href="/logo.png"/>
+	<link rel="OwlBook" type="image/png" href="/shopping-cart.png">
+
+	<!-- font awesome cdn link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+	<!--custom css file link-->
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body{
+			background-image: url(banner-bg.jpg);
+		}
+	</style>
+	<script src="srcipt.js"></script>
+</head>
+<body> 
+	<header class="header">
+		<div class="section">
+			<div class="logo">
+				<a href="ques1.html"><img src="logo.png" width="125px"></a>
+			</div>
+
+			<form class="search-form" action="#">
+				<input type="search" name="" placeholder="Search..." id="search-box">
+					<label for="search-box" class="fas fa-search"></label>
+			</form>
+
+			<nav class="icons">
+				<ul id="search-btn">
+					<li>
+						<div id="shopping-cart">
+							<a href="shopping-cart.html" class="fa-solid fa-cart-shopping"></a>
+						</div>
+					</li>
+					<li>
+						<div id="login-btn" class="fas fa-user"></div>
+					</li>
+					<li>
+						<div id="about-us">
+							<a href="aboutus.html" class="fa-solid fa-circle-info"></a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="menu">
+			<nav class="navbar">
+				<a href="ques1.html"> Home </a>
+				<a href="categories.html"> Categories </a>
+				<a href="contact.html"> Contact </a>
+				<a href="ques2.html"> Visitor Enquiry </a>
+			</nav>
+		</div>
+
+		<div class="home" id="home">
+			<div class="title" align="left">
+			
+					<h1>
+						<font size="10">
+							<a href="Obedience-to-Authority.html">Obedience to Authority:<br> An Experimental View</a>
+							<input type="hidden" id="name" value="Obedience to Authority: An Experimental View"/>
+						</font>
+					</h1>
+			
+			</div>
+
+		<hr width="25%" align="left" />
+
+		<div class="book" align="center">
+			<table border="0" width="600" cellspacing="0" cellpadding="1" align="center">
+				<tr>
+					<td>
+						<img src="book-1.png" id="image">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<font size="5">
+							<b>Price: <i>$<span id="price">10,40</span></i></b>
+						</font>
+						<p>
+							<font size="4">
+								<form action="shopping-cart.html">
+									<label for="quantity">Qty:</label>
+									<input type="number" id="quantity" name="quantity" min="1" max="50" value="1">
+									<input type="button" id="add_to_cart" value="Add to Cart"> 
+								</form>
+							</font>
+						</p>
+					</td>
+				</tr>
+			</table>
+
+			<table border="0" width="1000" cellspacing="0" cellpadding="0" align="left">
+				<tr>
+					<th> 
+						<font size="5">Overview</font>
+					</th>
+				</tr>
+
+				<tr>
+					<td> 
+						<font size="4">
+							<b>Auhor: Stanley Milgram</b><br>
+							 <br>
+							 In the 1960s, Yale University psychologist Stanley Milgram famously carried out a series of experiments that forever changed our perceptions of morality and free will. The subjects-or "teachers"-were instructed to administer electroshocks to a human "learner," with the shocks becoming progressively more powerful and painful. Controversial but now strongly vindicated by the scientific community, these experiments attempted to determine to what extent people will obey orders from authority figures regardless of consequences. "Milgram's experiments on obedience have made us more aware of the dangers of uncritically accepting authority," wrote Peter Singer in the New York Times Book Review. Obedience to Authority is Milgram's fascinating and troubling chronicle of his classic study and a vivid and persuasive explanation of his conclusions. 
+
+							 <br>
+
+							<br>In times of crisis, the great works of philosophy help us make sense of the world. The Harper Perennial Resistance Library is a special five-book series highlighting short classic works of independent thought that illuminate the nature of truth, humanity's dangerous attraction to authoritarianism, the influence of media and mass communication, and the philosophy of resistance-all critical in understanding today's politically charged world. 
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+	</header>
+</body>
+</html>
